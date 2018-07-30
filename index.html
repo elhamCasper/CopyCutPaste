@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <input type="text" oncopy="myFunction()" oncut="myCut()" onpaste="Paste()" value="Try to copy this text">
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "You copied text!"
+        }
+
+        function myCut() {
+            document.getElementById("demo").innerHTML = "You cut text!"
+        }
+
+        function Paste() {
+            //document.getElementById("demo").innerHTML = "You cut text!"
+            alert("Success Paste not pasta")
+        }
+    </script>
+
+</body>
+
+</html>
